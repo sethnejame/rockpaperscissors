@@ -12,6 +12,31 @@ After(async function() {
   return await this.closeHomePage()
 })
 
+When('I click {string}', function (string) {
+    // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string} or {string} or {string}', function (string, string2, string3) {
+    // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string} or {string} or {string}', function (string, string2, string3) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string} or {string}', function (string, string2) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string} update depending on whether or not I won the game', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
 // const { After, Given, Then, When } = require('cucumber')
 // //this works
 // Given('I visit the site', async function () {
