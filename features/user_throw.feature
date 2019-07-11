@@ -8,7 +8,9 @@ Feature: User can throw Rock, Paper or Scissors
 
     Scenario: User makes a throw selection
         Then I should see "Choose your weapon!"
-        When I click "Rock!" or "Paper!" or "Scissors!"
-        Then I should see "You threw Rock!" or "You threw Paper" or "You threw Scissors!"
-        And I should see "Your opponent threw Rock!" or "Your opponent threw Paper!" or "Your opponent threw Scissors!"
-  
+        When I click the "Rock"
+        Then I should see "Rock!"
+        # When I click the "Paper" button
+        # Then I should see "Paper!"
+        # When I click the "Scissors!" button
+        # Then I should see "Scissors!"

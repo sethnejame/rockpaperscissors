@@ -1,19 +1,39 @@
-console.log("It's Rock, Paper, Scissors time!");
+let randomThrowButton = document.getElementById("random-throw")
+let rockThrowButton = document.getElementById("rock-throw")
+let paperThrowButton = document.getElementById("paper-throw")
+let scissorsThrowButton = document.getElementById("scissors-throw")
+let rpsArr = ['Rock!', 'Paper!', 'Scissors!']
 
-let userThrowButton = document.getElementById("user-throw")
+randomThrowButton.addEventListener("click", () => {
 
-userThrowButton.addEventListener("click", () => {
+    let throwRandomizer = rpsArr[Math.floor(Math.random()*rpsArr.length)]
 
-    let rpsArr = ['Awe snap, son!  You threw Rock!', 'Everybody hit the deck!  You threw Paper!', 'Cover your eyes!  You threw Scissors!']
-    console.log(rpsArr) 
+    let showThrowDiv = document.getElementById("comp-result")
 
-    let userThrowRandomizer = rpsArr[Math.floor(Math.random()*rpsArr.length)]
-    console.log(userThrowRandomizer)
+    showThrowDiv.innerHTML = (throwRandomizer)
 
-    let showThrowDiv = document.getElementById("result")
-    console.log(showThrowDiv)
+})
 
-    showThrowDiv.innerHTML = (userThrowRandomizer)
+rockThrowButton.addEventListener("click", () => {
 
+    let showThrowDiv = document.getElementById("user-result")
+
+    showThrowDiv.innerHTML = (rpsArr[0])
+
+})
+
+paperThrowButton.addEventListener("click", () => {
+
+    let showThrowDiv = document.getElementById("user-result")
+
+    showThrowDiv.innerHTML = (rpsArr[1])
+
+}) 
+
+scissorsThrowButton.addEventListener("click", () => {
+
+    let showThrowDiv = document.getElementById("user-result")
+
+    showThrowDiv.innerHTML = (rpsArr[2])
 
 }) 

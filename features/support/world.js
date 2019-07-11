@@ -26,6 +26,25 @@ class RockPaperScissorsWorld {
 
     expect(actualContent).to.be.eq(expectedContent)
   }
+
+  btnSelectorFromName(btnName) {
+    if (btnName === 'rock') {
+      return '#rock-throw'
+    } else if (btnName === 'paper') {
+        return '#paper-throw'
+    } else if (btnName === 'scissors') {
+        return '#scissors-throw'
+    } else {
+       `${btnName} button is not defined`
+    }
+  }
+
+  async clickOnButton(btnName) {
+    const btnSelector = this.btnSelectorFromName(btnName.toLowerCase())
+    await this.page.waitForSelector(btnSelector)
+    await this.page.click(btnSelector)
+  }
+
 }
 
 setWorldConstructor(RockPaperScissorsWorld)
