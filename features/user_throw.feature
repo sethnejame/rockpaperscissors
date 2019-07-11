@@ -10,7 +10,7 @@ Feature: User can throw Rock, Paper or Scissors
         Then I should see "Choose your weapon!"
         When I click the "Rock"
         Then I should see "Rock!"
-        # When I click the "Paper" button
-        # Then I should see "Paper!"
-        # When I click the "Scissors!" button
-        # Then I should see "Scissors!"
+        When I click the "Paper"
+        Then I should see "Paper!"
+        When I click the "Scissors"
+        Then I should see "Scissors!"
