@@ -14,7 +14,7 @@ randomThrowButton.addEventListener("click", () => {
 
     let compThrowDiv = document.getElementById("comp-result")
 
-    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
+    compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
 
 })
 
@@ -28,7 +28,7 @@ rockThrowButton.addEventListener("click", () => {
 
     let compThrowDiv = document.getElementById("comp-result")
 
-    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
+    compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
 
 })
 
@@ -42,7 +42,7 @@ paperThrowButton.addEventListener("click", () => {
 
     let compThrowDiv = document.getElementById("comp-result")
 
-    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
+    compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
 
 }) 
 
@@ -56,6 +56,6 @@ scissorsThrowButton.addEventListener("click", () => {
 
     let compThrowDiv = document.getElementById("comp-result")
 
-    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
+    compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
 
 }) 

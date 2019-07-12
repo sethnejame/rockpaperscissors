@@ -14,14 +14,34 @@ html, body {
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    width: 70%;
+    width: 80%;
     height: 100%;
     border: none;
     padding: 20px;
     text-align: center;
     position: relative;
+}
+
+.user {
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+.computer {
+    display: inline-block;
+    max-width: 300px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 600px) 
+{
+     .left-div, .right-div
+     {
+          max-width: 100%;
+     }
 }

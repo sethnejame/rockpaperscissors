@@ -9,5 +9,5 @@ Feature: User can play against the computer
     Scenario: Computer makes a random throw
         When I click the "Rock"
         Then I should see "Rock!"
-        Then I should see "The Computer threw "
+        Then I should see "Computer threw "
        
