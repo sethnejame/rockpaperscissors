@@ -30,6 +30,10 @@ rockThrowButton.addEventListener("click", () => {
 
     compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
 
+    let wins = document.getElementById("show-winner")
+
+    wins.innerHTML = (winner(rpsArr[0], throwRandomizer))
+
 })
 
 paperThrowButton.addEventListener("click", () => {
@@ -43,6 +47,10 @@ paperThrowButton.addEventListener("click", () => {
     let compThrowDiv = document.getElementById("comp-result")
 
     compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
+
+    let wins = document.getElementById("show-winner")
+
+    wins.innerHTML = (winner(rpsArr[1], throwRandomizer))
 
 }) 
 
@@ -58,4 +66,30 @@ scissorsThrowButton.addEventListener("click", () => {
 
     compThrowDiv.innerHTML = ("Computer threw " + throwRandomizer)
 
+    let wins = document.getElementById("show-winner")
+
+    wins.innerHTML = (winner(rpsArr[2], throwRandomizer))
+
 }) 
+
+const winner = (userThrow, compThrow) => {
+    if (userThrow == 'Rock!' && compThrow == 'Rock!') {
+        return "It's a tie!"
+    } else if (userThrow == 'Rock!' && compThrow == 'Paper!') {
+        return "Computer wins!"
+    } else if (userThrow == 'Rock!' && compThrow == 'Scissors!') {
+        return "Player wins!"
+    } else if (userThrow == 'Paper!' && compThrow == 'Rock!') {
+        return "Player wins!"
+    } else if (userThrow == 'Paper!' && compThrow == 'Paper!') {
+        return "It's a tie!"
+    }  else if (userThrow == 'Paper!' && compThrow == 'Scissors!') {
+        return "Computer wins!"
+    } else if (userThrow == 'Scissors!' && compThrow == 'Rock!') {
+        return "Computer wins!"
+    } else if (userThrow == 'Scissors!' && compThrow == 'Paper!') {
+        return "Player wins!"
+    } else if (userThrow == 'Scissors!' && compThrow == 'Scissors!') {
+        return "It's a tie!"
+    } 
+}
