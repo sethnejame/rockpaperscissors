@@ -8,32 +8,54 @@ randomThrowButton.addEventListener("click", () => {
 
     let throwRandomizer = rpsArr[Math.floor(Math.random()*rpsArr.length)]
 
-    let showThrowDiv = document.getElementById("comp-result")
+    let showThrowDiv = document.getElementById("user-result")
 
-    showThrowDiv.innerHTML = (throwRandomizer)
+    showThrowDiv.innerHTML = ("You threw " + throwRandomizer)
+
+    let compThrowDiv = document.getElementById("comp-result")
+
+    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
 
 })
 
 rockThrowButton.addEventListener("click", () => {
 
+    let throwRandomizer = rpsArr[Math.floor(Math.random()*rpsArr.length)]
+
     let showThrowDiv = document.getElementById("user-result")
 
-    showThrowDiv.innerHTML = (rpsArr[0])
+    showThrowDiv.innerHTML = ("You threw " + rpsArr[0])
+
+    let compThrowDiv = document.getElementById("comp-result")
+
+    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
 
 })
 
 paperThrowButton.addEventListener("click", () => {
 
+    let throwRandomizer = rpsArr[Math.floor(Math.random()*rpsArr.length)]
+
     let showThrowDiv = document.getElementById("user-result")
 
-    showThrowDiv.innerHTML = (rpsArr[1])
+    showThrowDiv.innerHTML = ("You threw " + rpsArr[1])
+
+    let compThrowDiv = document.getElementById("comp-result")
+
+    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
 
 }) 
 
 scissorsThrowButton.addEventListener("click", () => {
 
+    let throwRandomizer = rpsArr[Math.floor(Math.random()*rpsArr.length)]
+
     let showThrowDiv = document.getElementById("user-result")
 
-    showThrowDiv.innerHTML = (rpsArr[2])
+    showThrowDiv.innerHTML = ("You threw " + rpsArr[2])
+
+    let compThrowDiv = document.getElementById("comp-result")
+
+    compThrowDiv.innerHTML = ("The Computer threw " + throwRandomizer)
 
 }) 

@@ -7,7 +7,7 @@ Feature: User can throw Rock, Paper or Scissors
         Given I visit the site
 
     Scenario: User makes a throw selection
-        Then I should see "Choose your weapon!"
+        Then I should see "Player, choose your weapon!"
         When I click the "Rock"
         Then I should see "Rock!"
         When I click the "Paper"
